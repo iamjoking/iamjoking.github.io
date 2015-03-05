@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sample Post
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2014-12-14
 categories: articles
 tags: [sample-post]
@@ -30,7 +30,7 @@ Below is just about everything you'll need to style in the theme. Check the sour
 
 This is figure
 
-![North China sika deer](http://a0.att.hudong.com/90/12/01000000000000119091257502990.jpg "North China sika deer")
+![Elaphurus davidianus](https://i.imgur.com/Mdc4szJl.jpg "Père David's deer")
 
 *This is emphasized*.
 
@@ -46,12 +46,8 @@ The New York Times <cite>(That’s a citation)</cite>.
 
 ## Blockquotes
 
-> Grumpy wizards make toxic brew for the evil Queen and Jack. 
-> The quick brown fox jumps over the lazy dog. 
-> Pack my box with five dozen liquor jugs. 
-> 
->
-> Jackdaws love my big sphinx of quartz.
+> Justification:
+> This species is listed as Extinct in the Wild, as all populations are still under captive management. The captive population in China has increased in recent years, and the possibility remains that free-ranging populations can be established some time in the near future. When that happens, its Red List status will need to be reassessed. 
 
 
 > I follow up the quest. Despite of day and night and death and hell.
@@ -80,20 +76,12 @@ The New York Times <cite>(That’s a citation)</cite>.
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
 | cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
+| cell7   | cell8   | cell9   |
 
-
-
-### table
 
 | Kingdom | Phylum  | Class | Order | Family |
 |:------:|:------:|:------:|:------:|:------:| 
 |ANIMALIA|CHORDATA|MAMMALIA|CETARTIODACTYLA|CERVIDAE|
-
 
 ## Code Snippets
 

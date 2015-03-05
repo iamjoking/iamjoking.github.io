@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: 'Open Sans';
+$base-font-family: 'Open Sans', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6em;
@@ -28,11 +28,11 @@ $code-font-color:  #eee;
 
 
 // Width of the content area
-$content-width:    540px;
-$page-width:       600px;
+$content-width:    960px;
+$page-width:       1000px;
 
-$on-palm:          540px;
-$on-laptop:        600px;
+$on-palm:          600px;
+$on-laptop:        800px;
 
 
 
@@ -55,7 +55,8 @@ $on-laptop:        600px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "_syntax-highlighting-native" // "syntax-highlighting"
 ;
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+

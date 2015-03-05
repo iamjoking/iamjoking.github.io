@@ -6,18 +6,22 @@ permalink: /about/
 ---
 
 
-### Freshman is a simple Jekyll theme.
+### Freshman21 is a Jekyll theme.
 
-Freshman is the first Jekyll theme I have maded for a long time, however I never use it.
-I publish it today (20141216), for the people who want to made their simple theme themselves. You can find the source code at [github](https://github.com/yulijia/freshman/).
+A tribute to Twenty Twelve and Twenty eleven.
 
-I already made another Jekyll theme [Freshman21](https://github.com/yulijia/freshman21/), this theme is what I am using now.
+I like wordpress's theme Twenty Twelve and Twenty eleven very much. 
+So I called my Jekyll theme Freshman21 (Freshman <q>twenty-first</q> , it means twenty-first century, not twenty-one), this theme is based on my former theme [Freshman](https://github.com/yulijia/freshman/).
+
+Freshman21 have two main page format, one is [single column](http://yulijia.net/en/  "see demo"), the other is two columns. For more details, please see the articles on the site.
+
+<cite>Proudly enjoy using Freshman21 theme.</cite> <code>;)</code>
+
+<img title="麋鹿" src="https://i.imgur.com/Mdc4szJl.jpg" alt="麋鹿" width="580" height="668" />
+
+#### Hi, the picture you have seen in the sample-page is a Père David's deer photoed by my friend at Beijing Milu Park, China.
+
+Milu(麋鹿) is the chinese name of Père David's deer.
 
 
-<cite>Proudly enjoy using Freshman theme.</cite> <code>;)</code>
-
-
-![North China sika deer](http://a0.att.hudong.com/90/12/01000000000000119091257502990.jpg "North China sika deer")
-
-### Hi, everyone. The photo you have seen in the sample-page is a North China sika deer, in Chinese “东北梅花鹿”. 
 

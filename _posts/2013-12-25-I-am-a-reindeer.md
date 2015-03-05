@@ -7,7 +7,6 @@ category: articles
 tags: 
 - reindeer
 - sample-post
-description: I am a happy Reindeer, haha
 ---
 
 

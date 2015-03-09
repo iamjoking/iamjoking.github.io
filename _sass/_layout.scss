@@ -2,24 +2,12 @@
  * Site header
  */
 .site-header {
-    background: url("/images/background.png");
-    border-top: 0px solid $grey-color-dark;
-    border-bottom: 0px solid $grey-color-light;
-    min-height: $height-top-band;
-    max-height: $height-top-band;
-    width: 100%;
-    // Positioning context for the mobile navigation icon
-    position: fixed;
-    box-shadow:0px 1px 13px #000000;
-}
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
 
-.site-logo {
-    border-radius: 50%;
-    float: left;
-    padding: 0px;
-    box-shadow:0px 2px 50px #000000;
-    height:60px;
-    width:60px;
+    // Positioning context for the mobile navigation icon
+    position: relative;
 }
 
 .site-title {
@@ -28,11 +16,10 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    padding: 0 0 0 15px;
+
     &,
     &:visited {
-        //color: $grey-color-dark;
-        color: #ffffff;
+        color: $grey-color-dark;
     }
 }
 
@@ -105,10 +92,8 @@
  * Site footer
  */
 .site-footer {
-    border-top: 0px solid $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background: url("/images/background.png");
-    box-shadow:0px 1px 13px #000000;
 }
 
 .footer-heading {
@@ -177,9 +162,7 @@
  * Page content
  */
 .page-content {
-    //padding: $spacing-unit 0;
-    padding: $height-top-band+$spacing-unit 0 0 0;
-
+    padding: $spacing-unit 0;
 }
 
 .page-heading {

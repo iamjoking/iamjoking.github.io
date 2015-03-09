@@ -12,3 +12,4 @@ github_username:  iamjoking
 
 # Build settings
 markdown: kramdown
+# highlighter: rouge

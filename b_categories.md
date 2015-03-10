@@ -4,10 +4,11 @@ title: Categories
 permalink: /categories/
 ---
 
-<ul class="tags-box">
 {% if site.posts != empty %}
+
+<ul class = "post-tags-num">
 {% for cat in site.categories %}
-<a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] | join: "/"}}<span class="size"> {{ cat[1].size }}</span></a>
+<li> <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }}<span> {{ cat[1].size }}</span></a> </li>
 {% endfor %}
 </ul>
 

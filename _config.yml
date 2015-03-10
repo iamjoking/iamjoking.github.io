@@ -2,10 +2,7 @@
 title: I am joking, seriously.
 email: momocy.w@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is a blog of "iamjoking".
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is a blog of "iamjoking", and I am glad to share with you my experiences.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://iamjoking.github.io" # the base hostname & protocol for your site
 twitter_username: 
@@ -16,7 +13,7 @@ favicon:     "/images/favicon.ico"
 
 # Build settings
 markdown: kramdown
-# highlighter: rouge
+highlighter: rouge
 
 paginate: 4
 paginate_path: "page:num"

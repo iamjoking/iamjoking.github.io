@@ -4,20 +4,50 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <div class="post-brow">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <ul class = "post-tags">
+            {% for tag in post.tags %}
+            <li> {{ tag }} </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<hr/>
+
+<nav class="pagination">
+  <a href="/"><img src="/images/first.png" class = "pagination-img"/></a>
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/"><img src="/images/previous.png" class = "pagination-img"/></a>
+    {% else %}
+      <a href="{{ paginator.previous_page_path }}"><img src="/images/previous.png" class = "pagination-img"/></a>
+    {% endif %}
+  {% else %}
+    <img src="/images/previous.png" class = "pagination-img-invalid"/>
+  {% endif %}
+
+
+  Page {{ paginator.page }} of {{ paginator.total_pages }} 
+
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}"><img src="/images/next.png" class = "pagination-img"/></a>
+  {% else %}
+    <img src="/images/next.png" class = "pagination-img-invalid"/>
+  {% endif %}
+
+  <a href="/page{{ paginator.total_pages }}"><img src="/images/last.png" class = "pagination-img"/></a>
+</nav>
 
 </div>

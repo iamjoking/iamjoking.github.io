@@ -45,7 +45,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: #ffffff;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -178,8 +178,8 @@
  */
 .page-content {
     //padding: $spacing-unit 0;
-    padding: $height-top-band+$spacing-unit 0 0 0;
-
+    padding: $height-top-band+$spacing-unit 0 $spacing-unit 0;
+    min-height: 620px;
 }
 
 .page-heading {
@@ -198,11 +198,37 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    float:left;
+}
+
+.post-tags {
+    font-size: $small-font-size;
+    list-style: none;
+    float: right;
+    white-space:nowrap;
+
+    > li {
+        display: inline;
+        /*padding: 3px 6px;*/
+        margin: 2px;
+        background: #eee;
+        color: #555;
+        border-radius: 3px;
+        text-decoration: none;
+        border: 1px dashed #cccccc;
+
+    }
 }
 
 .post-link {
-    display: block;
+    padding: 0 0 0 0;
     font-size: 24px;
+}
+
+.post-brow {
+    width: 100%;
+    line-height: $small-font-size;
+    display: inline-block;
 }
 
 
@@ -211,14 +237,14 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    /*margin-bottom: $spacing-unit;*/
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
+    padding: 0 0 $small-font-size 0;
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -250,4 +276,21 @@
             font-size: 18px;
         }
     }
+}
+
+.pagination {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pagination-img, .pagination-img-invalid{
+    max-height:  16px;
+    border:none;
+    padding: 0 5px;
+}
+
+.pagination-img-invalid {
+    opacity: 0.6;
 }

@@ -20,7 +20,7 @@ permalink: /tags/
 <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br />
 {% endfor %}
 {% endfor %}
+</ul>
 {% else %}
 <span>No posts</span>
 {% endif %}
-</ul>

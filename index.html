@@ -5,6 +5,7 @@ layout: default
 <div class="home">
 
   <ul class="post-list">
+    {% if site.posts != empty %}
     {% for post in paginator.posts %}
     <br/>
     <div class="post-list-item">
@@ -24,6 +25,9 @@ layout: default
       </li>
     </div>
     {% endfor %}
+    {% else %}
+    <span> No posts</span>
+    {% endif %}
   </ul>
 
 <nav class="pagination">

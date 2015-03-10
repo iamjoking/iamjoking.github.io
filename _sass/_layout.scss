@@ -388,3 +388,44 @@
         
     }
 }
+
+@media print { 
+    
+    .post {
+        box-shadow: 0px 0px 0px #000000;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0px;
+   }
+
+    .site-header, .site-footer{ 
+        display: none;
+   }
+
+   .page-content {
+        padding: 0px 0px 0px 0px;
+        background: white;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .wrapper {
+        padding: 0px 20px 0px 0px;
+        background: white;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .ref-declar {
+        display: visible !important;
+    }
+}
+
+@media screen {
+    .ref-declar {
+        display: none !important;
+    }
+}

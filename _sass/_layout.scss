@@ -23,17 +23,24 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-family: coronet;
+    font-size: 40px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     padding: 0 0 0 15px;
-    &,
-    &:visited {
-        //color: $grey-color-dark;
-        color: #ffffff;
-    }
+    &,&:visited,&:hover,&:link{
+        text-decoration: none;
+        color: $grey-color-light;
+        background: rgba(0,0,0,0);
+    };
+}
+
+.site-title-img-a {
+    &,&:visited,&:hover{
+        color: #000000;
+    };
 }
 
 .site-nav {
@@ -47,6 +54,19 @@
     .page-link {
         color: #ffffff;
         line-height: $base-line-height;
+
+        &,&:visited,&:link{
+            text-decoration: none;
+            color: $grey-color-light;
+            background: rgba(0,0,0,0);
+        };
+
+        &:hover{
+            text-shadow:0px 0px 10px #ffffff;
+            text-decoration: none;
+            color: $grey-color-light;
+            background: rgba(0,0,0,0);
+        };
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -129,6 +149,7 @@
     @extend %clearfix;
 }
 
+
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
@@ -180,6 +201,8 @@
     //padding: $spacing-unit 0;
     padding: $height-top-band+$spacing-unit 0 $spacing-unit 0;
     min-height: 620px;
+    /*background: url("/images/body-background.jpg");*/
+    background: #eee;
 }
 
 .page-heading {
@@ -293,4 +316,33 @@
 
 .pagination-img-invalid {
     opacity: 0.6;
+}
+
+
+.separator {
+    width: 80%;
+    box-shadow:0px 2px 10px #000000;
+}
+
+.post-list-item {
+    box-shadow: 1px 1px 10px #BBB;
+    padding: 10px 30px;
+    background: #ffffff;
+}
+
+.post {
+    box-shadow: 1px 1px 10px #BBB;
+    padding: 30px 40px;
+    background: #ffffff;
+}
+
+.clean-link {
+    &,&:visited,&:link, &:hover{
+        text-decoration: none;
+        background: rgba(0,0,0,0);
+        color: $grey-color-light;
+    };
+    &:hover{
+        text-shadow:0px 0px 5px #ffffff;
+    };
 }

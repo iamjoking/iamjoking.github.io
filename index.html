@@ -6,6 +6,8 @@ layout: default
 
   <ul class="post-list">
     {% for post in paginator.posts %}
+    <br/>
+    <div class="post-list-item">
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -20,10 +22,9 @@ layout: default
         </div>
         <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
       </li>
+    </div>
     {% endfor %}
   </ul>
-
-<hr/>
 
 <nav class="pagination">
   <a href="/"><img src="/images/first.png" class = "pagination-img"/></a>

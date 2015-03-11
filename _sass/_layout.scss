@@ -389,6 +389,12 @@
     }
 }
 
+.comment-board {
+    box-shadow: 1px 1px 10px #BBB;
+    padding: 30px 40px;
+    background: #ffffff;
+}
+
 @media print { 
     
     .post {
@@ -421,6 +427,10 @@
 
     .ref-declar {
         display: visible !important;
+    }
+
+    .comment-board {
+        display: none;
     }
 }
 

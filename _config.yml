@@ -8,6 +8,7 @@ url: "http://iamjoking.github.io" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  iamjoking
 author_name:	iamjoking
+disqus_shortname: 	iamjoking
 
 favicon:     "/images/favicon.ico"
 

@@ -30,6 +30,7 @@ layout: default
     {% endif %}
   </ul>
 
+{% if site.posts != empty %}
 <nav class="pagination">
   <a href="/"><img src="/images/first.png" class = "pagination-img"/></a>
   {% if paginator.previous_page %}
@@ -52,7 +53,13 @@ layout: default
     <img src="/images/next.png" class = "pagination-img-invalid"/>
   {% endif %}
 
-  <a href="/page{{ paginator.total_pages }}"><img src="/images/last.png" class = "pagination-img"/></a>
+  {% if paginator.total_pages > 1 %}
+    <a href="/page{{ paginator.total_pages }}"><img src="/images/last.png" class = "pagination-img"/></a>
+  {% else %}
+    <img src="/images/last.png" class = "pagination-img-invalid"/>
+  {% endif %}
+
 </nav>
+{% endif %}
 
 </div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "U盘启动盘格式化失败后无法识别"
 date:   2015-03-12 18:13:00
-comments: false
+comments: true
 published: true
 categories: bug system
 tags: 
